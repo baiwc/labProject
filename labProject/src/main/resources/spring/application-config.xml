@@ -8,5 +8,9 @@
     <!-- Uncomment and add your base-package here:
          <context:component-scan
             base-package="org.springframework.samples.service"/>  -->
-
+            <context:component-scan base-package="com.wc"/>
+            
+            <bean id="placeHolder" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+                <property name="location" value="classpath:spring/database.properties"></property>
+            </bean>
 </beans>
